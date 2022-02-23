@@ -2,7 +2,7 @@
     --white:#fff;
     --color-bg:#208feb;
     --color-bg-menu:#0072ce;
-
+    --gray: #696868;
 }
 
 * , ::before , ::after {
@@ -14,6 +14,7 @@
     margin: 0;
     font-size: 16px;
     font-family: sans-serif;
+    background-color: rgb(240, 239, 239);
 }
 
 img {
@@ -138,11 +139,10 @@ a {
     font-size: 1.25rem;
     font-weight: normal;
     margin: 0;
-    /* color: rgb(105, 104, 104); */
 }
 
 .information__paragraph {
-    color: rgb(105, 104, 104);
+    color: var(--gray , #696868);
     margin-top: 5px;
 }
 
