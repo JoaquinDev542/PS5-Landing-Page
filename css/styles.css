@@ -79,11 +79,10 @@ a {
 /* Content Section */
 .content {
     height: calc(100vh - 86.36px);
+}
+
+.content__container {
     padding: 20px 30px ;
-    background-image: url(../assets/image/ps5-hd.png);
-    background-size: 400px;
-    background-position: center bottom;
-    background-repeat: no-repeat;
 }
 
 .content__title {
