@@ -5,18 +5,21 @@
     --black: #000;
     --gray: #696868;
     --hr: #d3d3d3;
-
+    --bg-body: #f0efef;
+    
+    --color-bg--hover:#1776c4;
 }
 
 * , ::before , ::after {
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 
  body {
     margin: 0;
     font-size: 16px;
     font-family: sans-serif;
-    background-color: rgb(240, 239, 239);
+    background-color: var(--bg-body , #f0efef);
 }
 
 img {
@@ -29,9 +32,16 @@ li {
 }
 
 a {
+    display: block;
     text-decoration: none;
 } 
 /* Header Section */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: var(--white , #fff);
+}
+
 .header__logo {
     width: 55px;
 }
@@ -54,7 +64,7 @@ a {
 .img__toggle-button {
     width: 35px;
 }
-
+ 
 .list {
     display: none;
 } 
@@ -98,11 +108,15 @@ a {
 .content__links-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .content__link {
-    padding: 10px 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 165.5px;
+    height: 40px;
+    line-height: 40px;
 }
 
 .content__link--shop-now {
@@ -117,7 +131,7 @@ a {
 .social-media {
     display: flex;
     align-items: center;
-    padding: 30px 0 0 0;
+    margin-top: 30px;
 }
 
 .social-media__link {
@@ -126,7 +140,7 @@ a {
 }
 /* Products Section */
 .products {
-    padding: 20px 30px 40px 30px ;
+    padding: 40px 30px ;
 }
 
 .products__container {
@@ -150,8 +164,31 @@ a {
 }
 
 .hr {
-    /* border: 1px solid var(--gray); */
     background-color: var(--hr , #d3d3d3);
     height: 1px;
     border: none;
+}
+
+@media screen and (hover:hover) {
+
+    .list__link:hover {
+        text-decoration: underline;
+    }
+
+    .content__link--shop-now:hover {
+        background-color: var(--color-bg--hover ,#1776c4);
+    }
+
+    .content__link--watch-trailer:hover {
+        color: var(--white , #fff);
+        background-color: var(--black , #000);
+    }
+
+    .social-media__link:hover {
+        text-decoration: underline;
+    }
+
+    .products__link:hover {
+        text-decoration: underline;
+    }
 }
