@@ -30,6 +30,13 @@ a {
     text-decoration: none;
 } 
 /* Header Section */
+.header {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    background-color: var(--white , #fff);
+}
+
 .header__logo {
     width: 55px;
 }
